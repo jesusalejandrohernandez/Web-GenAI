@@ -6,8 +6,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTableModule } from '@angular/material/table';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatSelectModule } from '@angular/material/select';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,12 +20,7 @@ import { TweetPreviewComponent } from './pages/tweet-preview/tweet-preview.compo
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { RecipeRecommendationComponent } from './pages/recipe-recommendation/recipe-recommendation.component';
-import { MarketplaceComponent } from './pages/marketplace/marketplace.component';
-import { ProductCardComponent } from './common/marketplace/product-card/product-card.component';
-import { ProductDetailComponent } from './common/marketplace/product-detail/product-detail.component';
-import { ImageViewerComponent } from './common/marketplace/image-viewer/image-viewer.component';
-import { ProductCardMlComponent } from './common/marketplace/product-card-ml/product-card-ml.component';
-import { ProductDetailMlComponent } from './common/marketplace/product-detail-ml/product-detail-ml.component';
+import { DocumentProcessingComponent } from './pages/document-processing/document-processing.component';
 
 @NgModule({
   declarations: [
@@ -30,12 +28,7 @@ import { ProductDetailMlComponent } from './common/marketplace/product-detail-ml
     ChatDocumentsComponent,
     TweetPreviewComponent,
     RecipeRecommendationComponent,
-    MarketplaceComponent,
-    ProductCardComponent,
-    ProductDetailComponent,
-    ImageViewerComponent,
-    ProductCardMlComponent,
-    ProductDetailMlComponent
+    DocumentProcessingComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +40,10 @@ import { ProductDetailMlComponent } from './common/marketplace/product-detail-ml
     MatIconModule,
     MatFormFieldModule,
     MatGridListModule,
-    MatSelectModule,
+    MatDividerModule,
+    MatProgressBarModule,
+    MatTableModule,
+    MatSnackBarModule,
     FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,

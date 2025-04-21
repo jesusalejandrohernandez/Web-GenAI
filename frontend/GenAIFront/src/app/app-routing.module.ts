@@ -3,13 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { ChatDocumentsComponent } from './pages/chat-documents/chat-documents.component';
 import { TweetPreviewComponent } from './pages/tweet-preview/tweet-preview.component';
 import { RecipeRecommendationComponent } from './pages/recipe-recommendation/recipe-recommendation.component';
-import { MarketplaceComponent } from './pages/marketplace/marketplace.component';
+import { DocumentProcessingComponent } from './pages/document-processing/document-processing.component';
 
 const routes: Routes = [
   { path: 'chat', component: ChatDocumentsComponent },
   { path: 'content', component: TweetPreviewComponent },
-  { path: 'recipe', component: RecipeRecommendationComponent },
-  { path: 'marketplace', component: MarketplaceComponent }
+  { path: 'document', component: DocumentProcessingComponent },
+  { path: 'recipe', component: RecipeRecommendationComponent }
 ];
 
 @NgModule({
